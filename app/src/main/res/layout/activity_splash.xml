@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:background="@drawable/gradient_tamim"
+    >
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="164dp"
+        android:layout_height="203dp"
+
+
+        android:src="@drawable/t"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="357dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="188dp"
+        android:paddingLeft="5dp"
+
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="CPU\nScheduling\nManager"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#514354"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/tamim"
+       android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="Developed by Tamim || Taslima\n || Nazia"
+        android:backgroundTint="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.576">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

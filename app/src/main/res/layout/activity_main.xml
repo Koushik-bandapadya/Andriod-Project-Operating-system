@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_tamim"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="390dp"
+            android:layout_height="313dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="170dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="CPU Scheduling Manager"
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textColor="#4f5358"
+            android:textSize="30sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+
+        <TableLayout
+            android:id="@+id/prtable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1,2,3,5">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_tamim2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_weight="15"
+
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Process Name"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#215261"
+
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/at"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:layout_weight="20"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Arrival Time"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#215261">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:layout_weight="20"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Burst Time"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#215261">
+
+                </TextView>
+
+
+            </TableRow>
+
+
+            <LinearLayout
+                android:id="@+id/layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+        </TableLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="373dp"
+            android:layout_height="233dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+
+                android:background="@drawable/round_tamim1"
+
+                android:drawableRight="@drawable/ic_add"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Add Row"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#0093fd"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.088">
+
+            </Button>
+
+            <Button
+                android:id="@+id/row_delete"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+
+
+                android:layout_marginStart="4dp"
+
+
+                android:background="@drawable/round_tamim1"
+
+
+                android:drawableRight="@drawable/ic_baseline_close_24"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Remove Row"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#006db0"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button_add"
+                app:layout_constraintStart_toEndOf="@+id/button_add"
+                app:layout_constraintTop_toTopOf="@+id/button_add"
+                app:layout_constraintVertical_bias="0.0">
+
+            </Button>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/round_primary"
+                android:backgroundTint="#00f7fd"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowColor="@color/black"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/row_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/row_delete"
+                app:layout_constraintTop_toTopOf="@+id/row_delete"
+                app:layout_constraintVertical_bias="0.0"></Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
